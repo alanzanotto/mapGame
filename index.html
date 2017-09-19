@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	
+  <head>
+    <title>Map Game</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="centerButtons.css">
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script src="gmap_controls.js"></script>
+  </head>
+  
+  
+  <body>
+  	
+    <div id="map"></div>
+    
+  <!--
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcbIVq5H8Vn_8bJxpt501OFh46-lXQAhc&callback=initMap&libraries=visualization" 
+  async defer></script>  --> 
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcbIVq5H8Vn_8bJxpt501OFh46-lXQAhc&libraries=visualization&callback=initMap">
+    </script>
+    
+    
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrFZLdy3hEe2fK_Kk0VlhsgqhJqDJVXqg",
+    authDomain: "azaz-3f0dd.firebaseapp.com",
+    databaseURL: "https://azaz-3f0dd.firebaseio.com",
+    projectId: "azaz-3f0dd",
+    storageBucket: "azaz-3f0dd.appspot.com",
+    messagingSenderId: "617692727555"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+  </body>
+</html>

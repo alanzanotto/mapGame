@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>e6b5a728-f430-48a3-aeae-c9cade039f5e</Id>
+  <Name>BCTF Outlet</Name>
+  <Content>
+    <svg xmlns:compac="urn:Compac.DisplayServer" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="960" height="1080" id="svg3885" version="1.1">
+      <defs id="defs3887" />
+      <sodipodi:namedview id="base" pagecolor="#000000" bordercolor="#666666" borderopacity="0.5" inkscape:pageopacity="1.0" inkscape:pageshadow="2" inkscape:zoom="0.49497475" inkscape:cx="449.29646" inkscape:cy="516.05319" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1280" inkscape:window-height="972" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" />
+      <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,27.637817)">
+        
+
+
+
+	<!-- OUTLET NAME -->
+        <text xml:space="preserve" style="font-size:300px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#A0A0A0;fill-opacity:1;stroke:none;font-family:Sans" x="480" y="75" id="text3839" sodipodi:linespacing="125%"><tspan sodipodi:role="line" id="tspan3839" x="450" y="230">{Outlet.Name}</tspan></text>
+	
+
+  <image xlink:href="/images/lid_test_1.jpg" />
+  
+  <image xlink:href="/images/lids_test_1.jpg" width="80" height="80" id="image57" x="40" y="152" />
+http://wiki.inkscape.org/wiki/index.php/Image_links_manager
+
+
+
+	<!-- DESTINATION - Move Desination over left sie of cherry size -->
+        <text xml:space="preserve" style="font-size:72px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:left;fill:#E6E600;fill-opacity:1;stroke:none;font-family:Sans" x="75" y="400" id="text3962-1" sodipodi:linespacing="125%">{display.destination} | {display.barcode}</text>
+	
+	<!-- FRUIT SIZE -->
+	<text xml:space="preserve" style="font-size:200px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:left;fill:#E6E600;fill-opacity:1;stroke:none;font-family:Sans" x="150" y="650" id="text3958-1" sodipodi:linespacing="125%">{display.size}</text>
+
+	<!-- PRODUCT (5KG/2KG...) -->
+	<text xml:space="preserve" style="font-size:200px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:left;fill:#E6E600;fill-opacity:1;stroke:none;font-family:Sans" x="150" y="950" id="text3908-1" sodipodi:linespacing="125%">{display.product}</text>
+
+  <!-- IMAGE OF LID/BRAND -->
+  <img  xlink:href="/images/lid_{display.lid}.png" >
+
+
+	
+	
+	<!-- FPM / Date / Batch Start Time -->
+	
+	<text compac:update-color="purple" xml:space="preserve" style="font-size:25px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:left;fill:#E6E600;fill-opacity:1;stroke:none;font-family:Sans" x="60" y="965" id="text3908-1" sodipodi:linespacing="125%">{outlet.FPM} | {Batch.Start.DateTime} </text>
+	
+	
+	<!-- COMMENTING OUT THIS...MAY NEED TO BRING IT BACK AT A LATER POINT.
+        <compac:if>
+          <!-- IF BC Brand Lid then show a picture of that --
+          <compac:condition test="v[0]"=="bcbrand">
+            <compac:value>{display.lid}</compac:value>
+          </compac:condition>
+          <img width="100" height="100" x="75" y="400" xlink:href="/images/lid_{display.lid}.png" >
+          
+        </compac:if>
+  -->
+      </g>
+    </svg>
+  </Content>
+</Template>

@@ -1,0 +1,33 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      
+      #myLocationUI, #disasterLocatorUI, #incommingTransmissionUI {
+        background-color: #44996d;
+        border: 2px solid #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        cursor: pointer;
+        float: left;
+        margin-bottom: 22px;
+        text-align: center;
+      }
+      
+      #scatterShotUI, #pulseShotUI, #incommingTransmissionUI {
+        background-color: #c8cbd1; /* Grey: #c8cbd1    green: #44996d */
+        border: 2px solid #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        cursor: pointer;
+        float: left;
+        margin-bottom: 22px;
+        text-align: center;
+      }
+      
+      #myLocationText, #disasterLocatorText, #scatterShotText, #pulseShotText, #incommingTransmissionText {
+        color: #ffffff;
+        font-family: Roboto,Arial,sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }

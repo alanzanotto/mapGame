@@ -1,0 +1,41 @@
+
+
+1. Make Map change the the color throughout the day.  
+
+    Dawn        5-6AM
+    Morning     6AM-11AM
+    Lunch       11AM-1PM
+    Afternoon   1PM-5PM
+    Evening     5PM-8PM
+    Dusk        8PM-10PM
+    Night       10PM-5AM
+    
+2. Make a Button or / Memo to show what time it is in the corner or some part of the map HUD.
+
+3.  Add ScatterShot Button.
+    Description:  When you click on the map.  An area around the click will put 5-20 clicks on the map all at onces.
+    DONE BUT HAS SOME SORT OF BUG THAT WONT GET RID OF THE DATAPOINT FROM THE HEATMAP WHEN THE TIMER GOES UP
+    ....
+    Fixed issue, but still not quite right.  I think there is some slowness on code i cannot fix (google) on the stack.
+    the lag causes the heatmap to become slightly out of date.
+    i have a current fix that makes the heatmap appear to stay up to date, but i have a feeling it is deleting additional data points.
+    //ISUE COULD BE RESOLVED. on a single client, but may appear again if multiple people are playing.
+4.  This goes with #3.  But have a counter that only allows click to go off so many times.  have it re charge over a minute/x amount of time.
+
+5.  Make a button appear after 3 minutes that says "Refres Map" 
+    make a blue fade gradient on the screen.
+    refreshes the map where ever the user currently is looking at the map.
+    
+    need some more idea
+    
+6.  Ability to find purple areas
+    need to be able to zoom out of the map a bit more.  But while zoomed out must disable clicking and adding to the
+    heatmap.  Heatmap should be active only at the current zoom setting.
+    
+7.  Generate a random purple area.  DONE.
+
+8.  Generate multiple purple areas....Changing this. Use same code that generates 1 purple area.  disaster area.  
+    have multiple types, purple, blue, green, different colors will indicate better rewards achieved.
+
+9.  Incomming Transmission.  While waiting for a new disaster to appears, flash blue/grey and read "Incomming Transmission".   If a circle is already on the map.  Stop from flashing
+    and show "Find and Secure Area".  Have this Color Fade Purple to Yellow.  If area is found.  Circle coords are visible on screen.  Then update to "Secure Area"
