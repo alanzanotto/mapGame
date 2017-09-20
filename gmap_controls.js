@@ -1247,7 +1247,7 @@
         //set css backgroud color to grey #c8cbd1
         document.getElementById("pulseShotUI").style.backgroundColor = "#c8cbd1";
     }
-      else{
+      else {
         pulseShot = true;
         scatterShot = false;//Disable other Shot Types.
         //do other stuff
@@ -1279,16 +1279,4 @@
       }, 75)//timeout
       
       
-      
-      //Game Functions
-      //Circles
-      
-      //Generate a circle.
-
-      
-      
-      
-      
-      
-
     }//function addToFirebasePulseShot(data)
