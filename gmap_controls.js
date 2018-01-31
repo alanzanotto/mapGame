@@ -11,6 +11,9 @@
       var circlesOnMap = 0;
       var circlesOnMapCenter = null;
       var circlesOnMapTimestamp = null;
+      
+      var userLvl = 0;
+      var userExperience = 0;
      
       
       /* HUD CONTROLS */
@@ -908,7 +911,7 @@
             
           }
           incommingTransmissionUI()
-        }, 20 * 1000);
+        }, 8 * 1000);
       
         
         
@@ -1108,24 +1111,37 @@
     
     function disasterLocator(map) {
     //update the arrows based on users current screen location.  
+    
+
     var center = map.getCenter();
     
-    var disasterLocation = [
+    var path;
+    path = [
           center,
           circlesOnMapCenter
         ];
-        window.alert(center);
-        window.alert(circlesOnMapCenter);
         
-        var disasterLocation = new google.maps.Polyline({
-          path: disasterLocation,
+        //window.alert(center);
+        //window.alert(circlesOnMapCenter);
+        
+        var disasterLocation = null;
+        disasterLocation= new google.maps.Polyline({
+          path: path,
           geodesic: true,
           strokeColor: '#FF0000',
           strokeOpacity: 1.0,
           strokeWeight: 2
         });
-
+        disasterLocation.setMap(null);
+        //window.alert("setmap null");
         disasterLocation.setMap(map);
+    
+    if(circlesOnMap == 0)
+    {
+    disasterLocation.setMap(null);
+    window.alert("cleared");
+    }
+    
     }
     
     

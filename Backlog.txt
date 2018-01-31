@@ -39,3 +39,10 @@
 
 9.  Incomming Transmission.  While waiting for a new disaster to appears, flash blue/grey and read "Incomming Transmission".   If a circle is already on the map.  Stop from flashing
     and show "Find and Secure Area".  Have this Color Fade Purple to Yellow.  If area is found.  Circle coords are visible on screen.  Then update to "Secure Area"
+    
+10. To turn this into a game.  Make it so that there is point rewarded for disasters repaired.  Over time more disasters keep covering the world untill there is to many to fight and game over.
+
+11. I need some new ideas to make the game more addicting.  What should the driving force be to play.  New weapons. How does the game progressivly get harder?  Tetrus style where it the workload gets to much?
+    Or do you go with a points system?  Like snake. See how many points you can aquire before it fails.
+    
+12. Lvling Up a character.  Lvls go to lvl 99
